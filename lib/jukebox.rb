@@ -67,28 +67,6 @@ def run(songs)
       user_command = gets.chomp
     end
   end
-  def run(songs)
-  help
-  puts 'Please enter a command:'
-  user_command = gets.chomp
-  until user_command != 'exit'
-    if user_command == 'exit'
-      exit_jukebox
-    elsif user_command == 'list'
-      list(songs)
-      puts 'Please enter a command:'
-      user_command = gets.chomp
-    elsif user_command == 'play'
-      play(songs)
-      puts 'Please enter a command:'
-      user_command = gets.chomp
-    elsif user_command == 'help'
-      help
-      puts 'Please enter a command:'
-      user_command = gets.chomp
-    end
-  end
   if user_command == 'exit'
     exit_jukebox
-  end
 end
