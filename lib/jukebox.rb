@@ -90,4 +90,5 @@ def run(songs)
   end
   if user_command == 'exit'
     exit_jukebox
+  end
 end
